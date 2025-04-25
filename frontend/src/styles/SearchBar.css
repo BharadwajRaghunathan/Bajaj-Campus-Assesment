@@ -1,0 +1,138 @@
+.search-bar-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .search-bar:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .search-icon {
+    color: #007bff;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px;
+    background: transparent;
+    color: #333;
+  }
+  
+  .search-input::placeholder {
+    color: #999;
+    font-style: italic;
+  }
+  
+  .suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-radius: 0 0 20px 20px;
+    border: 1px solid #e0e0e0;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .suggestion-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .suggestion-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .suggestion-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .suggestion-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .suggestion-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .suggestion-specialty {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .search-bar-container {
+      max-width: 90%;
+    }
+    .search-input {
+      font-size: 14px;
+    }
+    .suggestion-item {
+      padding: 10px 15px;
+    }
+    .suggestion-photo {
+      width: 35px;
+      height: 35px;
+    }
+    .suggestion-name {
+      font-size: 13px;
+    }
+    .suggestion-specialty {
+      font-size: 11px;
+    }
+  }
+  
+  @media (max-width: 390px) {
+    .search-bar-container {
+      max-width: 95%;
+    }
+    .search-input {
+      font-size: 13px;
+    }
+    .suggestion-item {
+      padding: 8px 12px;
+    }
+    .suggestion-photo {
+      width: 30px;
+      height: 30px;
+    }
+    .suggestion-name {
+      font-size: 12px;
+    }
+    .suggestion-specialty {
+      font-size: 10px;
+    }
+  }
